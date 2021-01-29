@@ -15,7 +15,6 @@ function mapStateToProps({authedUser, users, tweets},{id}){
     return {
         authedUser,
         tweet:formatTweet(tweet, users[tweet.author], authedUser),
-
     }
 }
 export default connect(mapStateToProps)(Tweet)
